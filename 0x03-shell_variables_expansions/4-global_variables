@@ -1,2 +1,2 @@
 #!/bin/bash
-echo printenv | less
+echo printenv
