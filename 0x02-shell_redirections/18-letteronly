@@ -1,4 +1,4 @@
 #!/bin/bash
-ls /etc/ssh/sshd_config | grep -e ?a
+ls /etc/ssh/sshd_config | grep '^a*'
 
 
