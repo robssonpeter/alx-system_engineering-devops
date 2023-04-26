@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# the script to print ls file lists
+for x in *; do
+	var=${x#*-}
+	echo "$var"
+done

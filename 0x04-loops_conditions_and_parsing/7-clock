@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# script that displays the clock
+x=0
+while [ "$x" -le 72 ]
+do
+	if [ "$x" -eq 0 ]
+        then
+                echo "Hour: 0"
+	elif [ "$x" -lt 60 ]
+	then
+		echo $x
+	elif [ "$x" -eq 60 ]
+	then
+		echo "Hour: 1"
+	elif [ "$x" -gt 60 ]
+	then
+		echo $((x-60))
+	fi
+	x=$((x+1))
+done 

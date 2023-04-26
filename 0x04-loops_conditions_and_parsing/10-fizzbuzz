@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# the script for fizz buzz printing
+for x in {1..100}; do
+	if [ $((x%3)) -eq 0 ] && [ $((x%5)) -eq 0 ]
+	then
+		echo FizzBuzz
+	elif [ $((x%3)) -eq 0 ]
+	then
+		echo Fizz
+	elif [ $((x%5)) -eq 0 ]
+	then
+		echo Buzz
+	else
+		echo "$x"
+	fi 
+done
