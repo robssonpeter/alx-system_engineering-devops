@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# solution for Process and PID file
+function handle_sigterm {
+	echo "I hate the kill command"
+	rm "/var/run/myscript.pid"
+	exit 1
+}
+
+function handle_sigint {
+	echo "Y U no love me?!"
+	exit 1
+}
+
+function handle_sigquit {
+	rm "/var/run/myscript.pid"
+        exit 1
+}
+
+trap handle_sigterm SIGTERM
+trap handle_sigquit SIGQUIT
+trap handle_sigint SIGINT
+
+PID=$$
+echo $PID >> /var/run/myscript.pid
+while :
+do
+	echo "To infinity and beyond"
+done
