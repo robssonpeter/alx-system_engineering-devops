@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# the script for listining to the server
+nc -l 98
