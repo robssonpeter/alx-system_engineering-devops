@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 #  Script for question 0
-interfaces=$(ip link show | awk -F': ' '{print $2}')
-
-# Loop through each interface and get its IPv4 address(es)
-for interface in $interfaces; do
-  ipv4_addresses=$(ip addr show $interface | awk '$1 == "inet" {print $2}')
-  echo "$ipv4_addresses"
-done
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
+echo "8.8.8.8		facebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
