@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 #script to install and configure nginx
 apt update
-apt install nginx
+apt install -y nginx
+sudo tee /etc/nginx/sites-available/default > /dev/null <<EOF
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root /var/www/html;
+    index index.html index.htm;
+
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
+}
+EOF
+echo "Hello World!" > /var/www/html/index.html
 ufw allow 'Nginx HTTP'
