@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+#checking the status of apache webserver in docker container
 docker exec -ti 67f78178bd3e /bin/bash
 service apache2 status
-serivce apache2 start
+service apache2 start
