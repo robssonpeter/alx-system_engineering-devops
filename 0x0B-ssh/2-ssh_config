@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script to setup ssh authentication with ssh keys
+echo "    IdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config > /dev/null
+echo "    PasswordAuthentication no" >> /etc/ssh/ssh_config > /dev/null
