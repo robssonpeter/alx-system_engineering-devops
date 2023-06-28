@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# the script to transfer file to another server
 if [ $3 ]; then
 	scp -i${4} ~/${1} ${3}@${2}:~/
 else
