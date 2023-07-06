@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script for solving the nginx not responding
+sudo service nginx start
