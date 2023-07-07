@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # Script for solving the nginx not responding
-sudo service nginx start
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
