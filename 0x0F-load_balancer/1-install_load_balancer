@@ -1,7 +1,7 @@
-#/usr/bin/bash
+##/usr/bin/bash
 #script to install and configure haproxy load balancer
 sudo apt -y install software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.6 -y
+add-apt-repository ppa:vbernat/haproxy-2.8
 sudo apt -y update
 sudo apt install haproxy -y
 config = "
@@ -10,7 +10,7 @@ frontend www-http
         mode http
         default_backend apache
 
-backend apache
+backend nginx
         mode http
         balance roundrobin
         server web-01 100.26.173.25
