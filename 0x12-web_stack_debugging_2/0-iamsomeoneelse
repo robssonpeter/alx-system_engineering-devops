@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # script to enter as someone else
-sudo su "$1"
-whoami
-exit
+su "$1" -c whoami
