@@ -1,8 +1,8 @@
 {
   "employees": [
-    { "id": 1, "name": "Employee 1", "tasks": ["Holistic Project", "Preparatory Analysis", "Vascular Initiation"] },
-    { "id": 2, "name": "Employee 2", "tasks": ["Holistic Approach", "Volumetric Analysis", "Presbyterian Initiation"]},
-    { "id": 3, "name": "Employee 3", "tasks": ["Circumstantial Project implementation", "Preparatory Data Collection", "Machine Learning and AI"]}
+    { "id": 1, "name": "Employee 1", "tasks": ["Holistic Project", "Preparatory Analysis", "Vascular Initiation"], "total": 15},
+    { "id": 2, "name": "Employee 2", "tasks": ["Holistic Approach", "Volumetric Analysis", "Presbyterian Initiation"], "total": 15},
+    { "id": 3, "name": "Employee 3", "tasks": ["Circumstantial Project implementation", "Preparatory Data Collection", "Machine Learning and AI"], "total": 15}
   ],
   "comments": [
     { "id": 1, "body": "some comment", "employeeId": 1 },
