@@ -1,1 +1,14 @@
-{}
+{
+  "employees": [
+    { "id": 1, "name": "Employee 1" },
+    { "id": 2, "name": "Post 2" },
+    { "id": 3, "name": "Post 3" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "employeeId": 1 },
+    { "id": 2, "body": "some comment", "employeeId": 1 }
+  ],
+  "profile": {
+    "name": "robssonpeter"
+  }
+}
