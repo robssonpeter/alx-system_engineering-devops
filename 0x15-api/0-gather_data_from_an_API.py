@@ -7,6 +7,7 @@ from sys import argv
 url = 'https://jsonplaceholder.typicode.com/todos'
 users_url = f"https://jsonplaceholder.typicode.com/users/{argv[1]}"
 if __name__ == "__main__":
+    """ Run only if this is the main module """
     with requests.get(users_url) as usr_resp:
         name = usr_resp.json()['name']
         is_done = "is done with tasks"
