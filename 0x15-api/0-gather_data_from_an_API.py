@@ -26,4 +26,4 @@ if __name__ == "__main__":
                 text = f"Employee {name} {is_done}({len(completed)}/{total}):"
                 print(text)
                 for task in completed:
-                    print("\t"+task['title'])
+                    print("\t "+task['title'])
