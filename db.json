@@ -1,0 +1,14 @@
+{
+  "employees": [
+    { "id": 1, "name": "Employee 1", "tasks": ["Holistic Project", "Preparatory Analysis", "Vascular Initiation"], "total": 15},
+    { "id": 2, "name": "Employee 2", "tasks": ["Holistic Approach", "Volumetric Analysis", "Presbyterian Initiation"], "total": 15},
+    { "id": 3, "name": "Employee 3", "tasks": ["Circumstantial Project implementation", "Preparatory Data Collection", "Machine Learning and AI"], "total": 15}
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "employeeId": 1 },
+    { "id": 2, "body": "some comment", "employeeId": 1 }
+  ],
+  "profile": {
+    "name": "robssonpeter"
+  }
+}
