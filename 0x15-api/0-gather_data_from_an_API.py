@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Script to make a request to an API
-"""
+""" Script to make a request to an API """
 
 import requests
 from sys import argv
@@ -27,4 +25,3 @@ if __name__ == "__main__":
                 print(text)
                 for task in completed:
                     print("\t"+task['title'])
-
