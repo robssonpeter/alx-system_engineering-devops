@@ -42,4 +42,3 @@ if __name__ == "__main__":
                     user_id: all_tasks
                 }
                 fp.write(json.dumps(output))
-            
