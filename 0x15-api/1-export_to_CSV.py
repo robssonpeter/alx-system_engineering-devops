@@ -33,7 +33,3 @@ if __name__ == "__main__":
                     csv_content += f"\"{is_complete}\",\"{task['title']}\"\n"
             with open(f"{user_id}.csv", "+w", encoding="UTF-8") as fp:
                 fp.write(csv_content)
-                """text = f"Employee {name} {is_done}({len(completed)}/{total}):"
-                print(text)
-                for task in completed:
-                    print("\t "+task['title'])"""
