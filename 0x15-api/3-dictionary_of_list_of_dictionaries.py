@@ -11,7 +11,6 @@ if __name__ == "__main__":
 
     """ Run only if this is the main module """
     with requests.get(users_url) as usr_resp:
-    
         all_data = {
 
         }
