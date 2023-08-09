@@ -2,6 +2,7 @@
 """ The script to get top ten subreddits """
 import requests
 
+
 def top_ten(subreddit):
     """ Set a custom User-Agent to avoid Too Many Requests error """
     headers = {'User-Agent': 'Custom User-Agent'}
@@ -23,4 +24,3 @@ def top_ten(subreddit):
             print("None")
     else:
         print("None")
-
