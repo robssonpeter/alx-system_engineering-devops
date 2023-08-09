@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Hot topics with recursion """
 import requests
 
