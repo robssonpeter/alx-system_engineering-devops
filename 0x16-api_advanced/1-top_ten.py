@@ -5,7 +5,7 @@ import requests
 
 def top_ten(subreddit):
     """ Set a custom User-Agent to avoid Too Many Requests error """
-    headers = {'User-Agent': 'Custom User-Agent'}
+    headers = {'User-Agent': 'Alx-Student'}
 
     """ Make the API request to get the hot posts in the subreddit """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
