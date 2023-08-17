@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script for port forwarding on firewall
+echo 'net/ipv4/ip_forward=1' >> /etc/ufw/sysctl.conf
+
